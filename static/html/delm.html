@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+        .form {
+            padding: 20px;
+            margin-top: 300px;
+            width: 300px;
+            background-color: lightgrey;
+        }
+        h3{
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        label {
+            font-size: 25px;
+        }
+        input{
+            width: 80%;
+            height: 20px;
+        }
+        .button {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        button {
+            width: 70px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h3>Delete market by name</h3>
+        <form action="/delm" method="post">
+        <div>
+            <label for="name">Name</label>
+        </div>
+        <div>
+            <input id="name" name="name">
+        </div>
+        <div class="button">
+            <button type="submit">Delete</button>
+        </div>
+        </form>
+    </div>
+</body>
+</html>

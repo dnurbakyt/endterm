@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+        .form {
+            padding: 20px;
+            margin-top: 300px;
+            width: 300px;
+            background-color: lightgrey;
+        }
+        h3{
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        label {
+            font-size: 25px;
+        }
+        input{
+            width: 80%;
+            height: 20px;
+        }
+        .button {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        button {
+            width: 70px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h3>Update car</h3>
+        <form action="/upc" method="post">
+
+        <div>
+            <label for="id">Car ID</label>
+        </div>
+        <div>
+            <input id="id" name="id">
+        </div>
+
+        <div>
+            <label for="model">Model</label>
+        </div>
+        <div>
+            <input id="model" name="model">
+        </div>
+
+        <div>
+            <label for="year">Year</label>
+        </div>
+        <div>
+            <input id="year" name="year">
+        </div>
+
+        <div>
+            <label for="vehicle">Vehicle</label>
+        </div>
+        <div>
+            <input id="vehicle" name="vehicle">
+        </div>
+
+        <div>
+            <label for="market">Main Markets</label>
+        </div>
+        <div>
+            <input id="market" name="market">
+        </div>
+
+        <div class="button">
+            <button type="submit">Add</button>
+        </div>
+        </form>
+    </div>
+</body>
+</html>

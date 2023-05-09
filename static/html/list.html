@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+    <style>
+        .head {
+          display: flex;
+          justify-content: center;
+        }
+        table{
+            font-size: 25px;
+          width: 80%;
+          border-color: #000000;
+          border-width: 2px;
+          border-style: solid;
+        }
+        th, td {
+          border-color: #000000;
+          border-width: 2px;
+          border-style: solid;
+        }
+        button {
+            height: 30px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>List</h1>
+    </div>
+    <div>
+        <div>
+            <div>
+                <a href="/addc"><button>Add car</button></a>
+                <a href="/delc"><button>Delete car</button></a>
+                <a href="/upc"><button>Update car</button></a>
+            </div>
+            <div>
+                <a href="/addv"><button>Add vehicle</button></a>
+                <a href="/delv"><button>Delete vehicle</button></a>
+                <a href="/upv"><button>Update vehicle</button></a>
+            </div>
+            <div>
+                <a href="/addm"><button>Add market</button></a>
+                <a href="/delm"><button>Delete market</button></a>
+                <a href="/upm"><button>Update market</button></a>
+            </div>
+
+        </div>
+    </div>
+    <table>
+          <thead>
+              <tr>
+                    <th>ID</th>
+                    <th>Model</th>
+                    <th>Year</th>
+                    <th>Vehicle</th>
+                    <th>Main markets</th>
+              </tr>
+          </thead>
+          <tbody>
+                {{range .}}
+                <tr>
+                    <td>{{.ID}}</td>
+                    <td>{{.Model}}</td>
+                    <td>{{.Year}}</td>
+                    <td>{{.Vehicle}}</td>
+                    <td>{{.Market}}</td>
+                </tr>
+                {{end}}
+          </tbody>
+      
+    </table>
+</body>
+</html>
